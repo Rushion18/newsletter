@@ -1,20 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Newsletter</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Shon's Newsletter</title>
+  
+  
 </head>
 <body>
 
-    <div class="bigboy">
+  <main>
+  <section class="signUpForm"><h4>Stay updated!</h4>
 
-        <form>
-            <h2 class="center">Stay Updated</h2>
-        </form>
-        
-    </div>
+  <p id="lead">Join 60,000+ product managers receiving monthly updates on:</p>
+<ul>
+  <li><img src="newsletter-sign-up-with-success-message-main/assets/images/icon-list.svg" class="icon-list"><p>Product discovery and building what matters</p></li>
+  <li><img src="newsletter-sign-up-with-success-message-main/assets/images/icon-list.svg" class="icon-list"><p>Measuring to ensure updates are a success</p></li>
+  <li><img src="newsletter-sign-up-with-success-message-main/assets/images/icon-list.svg" class="icon-list"><p>much more!</p></li>
+</ul>
 
+  
+  <label for="email"><div>Email address</div><div id="error-message">Valid email required</div></label>
+  <input type="email" name="email" id="email" placeholder="email@company.com">
+ 
+  <input class="button" type="submit" value="Subscribe to monthly newsletter" onclick="signUp()">
+</section>
+<aside class="signUpForm"></aside>
+
+
+
+
+</main> 
+
+<section id="success-message">
+  <div><img src="newsletter-sign-up-with-success-message-main/assets/images/icon-success.svg"></div>
+  <h4>Thanks for subscribing!</h4>
+
+  <!-- <p>A confirmation email has been sent to <b>ash@loremcompany.com</b>.
+  Please open it and click the button inside to confirm your subscription.</p> -->
+
+  <button class="button"> Dismiss message </button>
+</section>
+
+  <script src="script.js"></script>
 </body>
 </html>
